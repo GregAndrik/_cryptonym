@@ -27,24 +27,24 @@ const Decryption = () => {
     } catch (error) {}
   };
 
-  const handleDecryption = () => {
-    try {
-      const decryptedText = decryptText(file.content, decryptionKey); // Call decryptText by parsing the file's content and the decryption Key as props
-      setDecryptedContent(decryptedText); // Store the decrypted content
-      setFileDecrypted(true);
-    } catch (error) {
-      setFileDecrypted(false);
-      setDecryptedContent(null); // Reset the decrypted content if decryption fails
-    }
-  };
-
   useEffect(() => {
+    const handleDecryption = () => {
+      try {
+        const decryptedText = decryptText(file.content, decryptionKey); // Call decryptText by parsing the file's content and the decryption Key as props
+        setDecryptedContent(decryptedText); // Store the decrypted content
+        setFileDecrypted(true);
+      } catch (error) {
+        setFileDecrypted(false);
+        setDecryptedContent(null); // Reset the decrypted content if decryption fails
+      }
+    };
+
     if (decryptionInitiated && file && decryptionKey) {
       handleDecryption();
     }
     setValidDecryptionKey(decryptionKey.length >= 128);
-  }, [decryptionInitiated, file, decryptionKey, handleDecryption]);
-
+  }, [decryptionInitiated, file, decryptionKey]);
+  
   // Handle AES decryption by feeding the security key to the CryptoJS algorithm
   const decryptText = (encryptedText, key) => {
     try {
