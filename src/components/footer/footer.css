@@ -1,0 +1,17 @@
+footer {
+  text-align: center;
+  background: linear-gradient(var(--color-primary) 15%, var(--color-dark) 85%);
+  padding: 7rem 0 3rem;
+  font-size: 0.9rem;
+}
+
+.footer_copyright {
+  color: var(--color-accent);
+  font-size: 1.5rem;
+}
+
+@media (max-width: 400px) {
+  .footer_copyright {
+    font-size: 1.2rem;
+  }
+}

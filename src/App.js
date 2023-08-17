@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './components/Navbar';
+import Home from './components/views/home/Home';
+import Encryption from './components/views/Encryption';
+import Decryption from './components/views/Decryption';
+import Footer from './components/footer/Footer'
+import { Route, Routes} from 'react-router-dom';
 
+// Rendering Home, Encryption, Decryption pages along with Navbar and Footer
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <div>
+        <Navbar/>
+        <Routes>
+          <Route path='/' element = {<Home/>} />
+          <Route path='/encryption' element = {<Encryption/>} />
+          <Route path='/decryption' element = {<Decryption/>} />
+        </Routes>
+        <Footer/>
+      </div>
+    </>
+  )
 }
 
 export default App;

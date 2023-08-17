@@ -1,0 +1,138 @@
+.encryption,
+.decryption {
+  margin: 1rem auto 0;
+  max-width: 50rem;
+  padding: 1.9rem;
+  background-color: var(--color-primary);
+  box-shadow: 0 0 1rem var(--color-shadow);
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 91.5vh;
+}
+
+.encryption h2,
+.decryption h2 {
+  text-align: center;
+  color: var(--color-accent);
+  margin-bottom: 2rem;
+}
+
+.directive {
+  margin-bottom: 2.5rem;
+  color: var(--color-accent);
+  text-align: justify;
+}
+
+.security-key-form {
+  background-color: var(--color-primary);
+  padding: 1.25rem;
+  box-shadow: 0 0 0.65rem var(--color-shadow);
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* So the eye icon stays inside the form*/
+}
+
+.security-key-form p {
+  color: var(--color-accent);
+}
+
+.security-key {
+  width: 100%;
+  padding: 0.75rem;
+  border: 0.125rem solid var(--color-accent);
+  border-radius: 0.38rem;
+  font-size: 1.15rem;
+  text-align: center;
+  color: var(--color-accent);
+  outline: none;
+  background-color: var(--color-primary);
+}
+
+.mask-toggle-button {
+  position: absolute; /* Stay inside form */
+  right: 1.6rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--color-accent); 
+  font-size: 1.2rem;
+}
+
+.encryption .Toastify__toast {
+  background-color: var(--color-dark) !important;
+  color: var(--color-accent) !important;
+}
+
+.Toastify__close-button {
+  color: var(--color-tint) !important; 
+}
+
+.Toastify__close-button:hover {
+  color: var(--color-dark) !important;
+}
+
+@media (max-width: 850px) {
+  .encryption,
+  .decryption {
+    width: 90%;
+  }
+
+  .encryption,
+  .decryption h2 {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .security-key-form {
+    padding-left: -2rem;
+    padding-right: -2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .encryption,
+  .decryption h2 {
+    font-size: 1rem;
+  }
+
+  .security-key-form {
+    padding-left: -1rem;
+    padding-right: -1rem;
+  }
+
+  .mask-toggle-button {
+    top: 48.5%;
+  }
+}
+
+@media (max-width: 353px) {
+  .mask-toggle-button {
+    top: 49%;
+  }
+}
+
+@media (max-width: 352px) {
+  .security-key-form p {
+    display: none;
+  }
+
+  .mask-toggle-button {
+    top: 29%;
+  }
+}
+
+@media (max-width: 350px) {
+  .mask-toggle-button {
+    top: 31%;
+    font-size: 1.1rem;
+  }
+}

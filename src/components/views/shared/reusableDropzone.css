@@ -1,0 +1,32 @@
+.dropZone {
+  border: 0.15rem dashed var(--color-accent);
+  padding: 2rem 10rem;
+  cursor: pointer;
+  outline: none;
+  background-color: var(--color-primary);
+  border-radius: 0.5rem;
+  transition: border-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dropZone:hover {
+  border-color: var(--color-tint);
+}
+
+.dropZone-icon {
+  color: var(--color-accent); 
+}
+
+@media (max-width: 600px) {
+  .dropZone {
+    width: 90%;
+  }
+}
+
+@media (max-width: 450px) {
+  .dropZone {
+    padding: 2rem 6rem;
+  }
+}
