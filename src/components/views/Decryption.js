@@ -15,13 +15,6 @@ const Decryption = () => {
   const [validDecryptionKey, setValidDecryptionKey] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
 
-  useEffect(() => {
-    if (decryptionInitiated && file && decryptionKey) {
-      handleDecryption();
-    }
-    setValidDecryptionKey(decryptionKey.length >= 128);
-  }, [decryptionInitiated, file, decryptionKey]);
-
   // Likewise with Encryption
   const onDrop = async (acceptedFiles) => {
     try {
@@ -44,6 +37,13 @@ const Decryption = () => {
       setDecryptedContent(null); // Reset the decrypted content if decryption fails
     }
   };
+
+  useEffect(() => {
+    if (decryptionInitiated && file && decryptionKey) {
+      handleDecryption();
+    }
+    setValidDecryptionKey(decryptionKey.length >= 128);
+  }, [decryptionInitiated, file, decryptionKey]);
 
   // Handle AES decryption by feeding the security key to the CryptoJS algorithm
   const decryptText = (encryptedText, key) => {
