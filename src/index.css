@@ -8,11 +8,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* scrollbar settings */
-::-webkit-scrollbar {
-  display: none;
-}
-
 :root {
   --color-primary: #222; /* background color */
   --color-dark: #111;
