@@ -47,6 +47,10 @@
   text-align: justify;
 }
 
+.home-content-row h2 {
+  font-size: 1.4rem;
+}
+
 .home-content-row p {
   font-size: 1.05rem;
 }
