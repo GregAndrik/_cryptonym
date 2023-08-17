@@ -43,7 +43,7 @@ const Decryption = () => {
       handleDecryption();
     }
     setValidDecryptionKey(decryptionKey.length >= 128);
-  }, [decryptionInitiated, file, decryptionKey]);
+  }, [decryptionInitiated, file, decryptionKey, handleDecryption]);
 
   // Handle AES decryption by feeding the security key to the CryptoJS algorithm
   const decryptText = (encryptedText, key) => {
