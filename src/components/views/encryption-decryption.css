@@ -79,7 +79,7 @@
   color: var(--color-dark) !important;
 }
 
-@media (max-width: 850px) {
+@media screen and (max-width: 850px) {
   .encryption,
   .decryption {
     width: 90%;
@@ -91,14 +91,14 @@
   }
 }
 
-@media (max-width: 450px) {
+@media screen and (max-width: 450px) {
   .security-key-form {
     padding-left: -2rem;
     padding-right: -2rem;
   }
 }
 
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
   .encryption,
   .decryption h2 {
     font-size: 1rem;
@@ -114,13 +114,13 @@
   }
 }
 
-@media (max-width: 353px) {
+@media screen and (max-width: 353px) {
   .mask-toggle-button {
     top: 49%;
   }
 }
 
-@media (max-width: 352px) {
+@media screen and (max-width: 352px) {
   .security-key-form p {
     display: none;
   }
@@ -130,7 +130,7 @@
   }
 }
 
-@media (max-width: 350px) {
+@media screen and (max-width: 350px) {
   .mask-toggle-button {
     top: 31%;
     font-size: 1.1rem;

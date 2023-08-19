@@ -56,7 +56,7 @@ p {
   transform: scale(1.05); /* Magnification effect */
 }
 
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
   p {
     line-height: 1.9rem;
     font-size: 0.9rem;
@@ -71,7 +71,7 @@ p {
   }
 }
 
-@media (max-width: 350px) {
+@media screen and (max-width: 350px) {
   p {
     font-size: 0.8rem;
   }

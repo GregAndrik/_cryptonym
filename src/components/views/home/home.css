@@ -64,7 +64,7 @@
   text-transform: uppercase;
 }
 
-@media (min-width: 600px) and (max-width: 1024px) {
+@media screen and (min-width: 600px) and (max-width: 1024px) {
   .home-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -72,7 +72,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .home-content {
     flex-direction: column;
     padding: 1rem;
@@ -87,7 +87,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
   .home-content-row p {
     font-size: 0.9rem;
   }
