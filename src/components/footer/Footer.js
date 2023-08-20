@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer>
       <div className='footer_copyright'>
-        <small> &copy; Gregory Andrikopoulos</small>
+        <p>&copy; {new Date().getFullYear()} _cryptonym. All rights reserved.</p>
       </div>
     </footer>
   )
