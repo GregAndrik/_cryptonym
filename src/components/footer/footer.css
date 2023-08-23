@@ -1,17 +1,22 @@
 footer {
-  text-align: center;
-  background: linear-gradient(var(--color-primary) 15%, var(--color-dark) 85%);
-  padding: 7rem 0 3rem;
-  font-size: 0.9rem;
+    text-align: center;
+    background: linear-gradient(var(--color-primary) 15%, var(--color-dark) 85%);
+    padding: 7rem 0 3rem;
+    font-size: 0.9rem;
 }
 
-.footer_copyright {
-  color: var(--color-accent);
-  font-size: 1.5rem;
+.footer-copyright {
+    color: var(--color-accent);
 }
 
-@media (max-width: 400px) {
-  .footer_copyright {
-    font-size: 1.2rem;
-  }
+@media screen and (max-width: 600px) {
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    footer p {
+        font-size: 0.7rem;
+    }
 }
