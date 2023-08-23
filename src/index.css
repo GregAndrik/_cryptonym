@@ -15,7 +15,7 @@ html {
     --color-white: #EDECE6;
     --color-accent: #00b87b; /* button color */
     --color-tint: #00ffaa; /* hover color */
-    --color-shadow: rgba(0, 255, 170, 0.3); /* surface border color */
+    --color-shadow: rgba(0, 184, 123, 0.3); /* surface border color */
 
     --toastify-icon-color-success: var(--color-accent) !important; 
     --toastify-color-progress-success: var(--color-tint) !important;
