@@ -1,4 +1,4 @@
-import Navbar from './components/Navbar';
+import Navbar from './components/nav/Navbar';
 import Home from './components/views/home/Home';
 import Encryption from './components/views/Encryption';
 import Decryption from './components/views/Decryption';
