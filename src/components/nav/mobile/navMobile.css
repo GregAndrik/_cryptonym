@@ -9,8 +9,8 @@
     transform: translateX(-50%);
     bottom: 2rem;
     display: flex;
+    border-radius: 16px 16px 0 0;
     gap: 0.8rem;
-    border-radius: 16px;
     backdrop-filter: blur(15px);
     list-style: none;
 }

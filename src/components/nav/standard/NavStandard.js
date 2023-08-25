@@ -1,4 +1,4 @@
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import CustomLink from '../shared/CustomLink';
 import './navStandard.css'
 
