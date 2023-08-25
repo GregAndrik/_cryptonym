@@ -31,6 +31,10 @@
     transform: translateY(-2px); /* Slight upward shift on hover */
 }
 
+.nav-standard li:hover {
+    background-color: var(--color-light);
+}
+
 .nav-standard-site-title {
     font-size: 2rem; 
     text-decoration: none;

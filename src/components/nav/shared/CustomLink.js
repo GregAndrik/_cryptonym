@@ -21,7 +21,7 @@ function CustomLink({to, children, ...props}) {
         onMouseEnter={(e) => {
           if (!isActive) {
             // On hover, change the link's text and background colors
-            e.target.style.backgroundColor = "var(--color-light)"; // Change background color on hover
+             //e.target.style.backgroundColor = "var(--color-light)"; // Change background color on hover
           }
         }}
         onMouseLeave={(e) => {
