@@ -64,6 +64,11 @@
     text-transform: uppercase;
 }
 
+.home-mobile-title {
+    text-align: center;
+    color: var(--color-accent);
+}
+
 @media screen and (min-width: 600px) and (max-width: 1024px) {
     .home-content {
         display: grid;
@@ -87,6 +92,12 @@
     }
 }
 
+@media screen and (min-width: 499px) {
+    .home-mobile-title {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 400px) {
     .home-content-row p {
         font-size: 0.9rem;
@@ -94,5 +105,9 @@
 
     .home-content-row-title {
         font-size: 1rem;
+    }
+
+    .home-mobile-title {
+        font-size: 1.5rem;
     }
 }
