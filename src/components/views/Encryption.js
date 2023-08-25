@@ -1,4 +1,3 @@
-import './encryption-decryption.css'
 import { useState, useRef } from 'react';
 import CryptoJS from 'crypto-js';
 import ReusableDropzone from './shared/ReusableDropzone'; 
@@ -7,6 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
+import './encryption-decryption.css'
 
 const Encryption = () => {
   const securityKeyInputRef = useRef(null); // Obtain reference to the security key input element within JSX 
@@ -133,7 +134,7 @@ const Encryption = () => {
 
             <div className='button-container'>
               {securityKey && (
-                <button className='button-primary' onClick={copyToClipboard}>Copy</button>
+                <button className='primary-button' onClick={copyToClipboard}>Copy</button>
               )}
             </div>
           </div>

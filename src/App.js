@@ -1,4 +1,4 @@
-import Navbar from './components/nav/Navbar';
+import NavCore from './components/nav/shared/NavCore';
 import Home from './components/views/home/Home';
 import Encryption from './components/views/Encryption';
 import Decryption from './components/views/Decryption';
@@ -6,11 +6,11 @@ import Footer from './components/footer/Footer'
 import { Route, Routes} from 'react-router-dom';
 
 // Rendering Home, Encryption, Decryption pages along with Navbar and Footer
-function App() {
+const App = () => {
   return (
     <>
       <div>
-        <Navbar/>
+        <NavCore/>
         <Routes>
           <Route path='/' element = {<Home/>} />
           <Route path='/encryption' element = {<Encryption/>} />

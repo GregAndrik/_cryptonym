@@ -1,10 +1,11 @@
-import './encryption-decryption.css'
 import { useState, useEffect } from 'react';
 import CryptoJS from 'crypto-js';
 import ReusableDropzone from './shared/ReusableDropzone';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
+
+import './encryption-decryption.css'
 
 const Decryption = () => {
   const [file, setFile] = useState(null);
@@ -113,7 +114,7 @@ const Decryption = () => {
               />
               
               <div className='button-container'>
-                <button className='button-primary' onClick={handleDecryptButtonClick} disabled={!validDecryptionKey}>Decrypt</button>
+                <button className='primary-button' onClick={handleDecryptButtonClick} disabled={!validDecryptionKey}>Decrypt</button>
               </div>
               {decryptionKey && (
               <button className='mask-toggle-button' onClick={() => setShowPassword(!showPassword)}>
@@ -124,7 +125,7 @@ const Decryption = () => {
           )}
           {fileDecrypted && decryptedContent && (
             <div>
-              <button className='button-primary' onClick={createDecryptedFile}>Download Decrypted File</button>
+              <button className='primary-button' onClick={createDecryptedFile}>Download Decrypted File</button>
             </div>
           )}
         </div>

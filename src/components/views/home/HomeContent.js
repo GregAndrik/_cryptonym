@@ -13,7 +13,7 @@ const HomeContent = () => {
         <h2 className='home-content-row-title'>Operational Protocol</h2>
         <p>
           Users must establish direct contact with their designated supervisor agent to obtain the necessary security tokens required for decryption purposes. Furthermore, any 
-          event suggestive of a security breach demands immediate reporting. By adhering to this directive, we collectively ensure the unyielding protection of classified information.
+          event suggestive of a security breach demands immediate attention. By adhering to this directive, we collectively ensure the unyielding protection of classified information.
         </p>
       </div>
 

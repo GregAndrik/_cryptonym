@@ -10,12 +10,13 @@ html {
 
 :root {
     --color-primary: #222; /* background color */
-    --color-dark: #111;
+    --color-dark: #111; /* background undertone */
     --color-light: #444;
     --color-white: #EDECE6;
     --color-accent: #00b87b; /* button color */
     --color-tint: #00ffaa; /* hover color */
     --color-shadow: rgba(0, 184, 123, 0.3); /* surface border color */
+    --color-shadow-dark: rgba(0, 0, 0, 0.3);
 
     --toastify-icon-color-success: var(--color-accent) !important; 
     --toastify-color-progress-success: var(--color-tint) !important;
@@ -39,10 +40,10 @@ p {
     margin-top: 0.625rem;
 }
 
-.button-primary {
+.primary-button {
     padding: 0.75rem 1.5rem;
     background-color: var(--color-accent);
-    color: var(--color-dark);
+    color: var(--color-primary);
     border: none;
     border-radius: 0.25rem;
     cursor: pointer;
@@ -51,7 +52,7 @@ p {
     transition: background-color 0.3s ease;
 }
 
-.button-primary:hover {
+.primary-button:hover {
     background-color: var(--color-tint);
     transform: scale(1.05); /* Magnification effect */
 }
@@ -66,7 +67,7 @@ p {
         font-size: 1rem;
     }
 
-    .button-primary {
+    .primary-button {
         font-size: 1rem;
     }
 }
@@ -80,7 +81,7 @@ p {
         font-size: 1rem;
     }
 
-    .button-primary {
+    .primary-button {
         font-size: 0.9rem;
         padding: 0.5rem 1rem;
     }

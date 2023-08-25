@@ -1,0 +1,23 @@
+.mobile-nav {
+    background: var(--color-shadow-dark);
+    width: max-content;
+    display: block;
+    padding: 1.5rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 16px;
+    backdrop-filter: blur(15px);
+    list-style: none;
+}
+  
+.mobile-nav-link {
+    background: transparent;
+    padding: 0.9rem 1rem 0.7rem 1rem;
+    border-radius: 50%;
+    font-size: 1.1rem;
+}

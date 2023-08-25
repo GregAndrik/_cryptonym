@@ -1,6 +1,6 @@
-import './home.css'
 import HomeContent from './HomeContent';
 import argus from '../../../assets/argus-logo.png';
+import './home.css'
 
 const Home = () => {
   return (
