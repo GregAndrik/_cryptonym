@@ -92,7 +92,7 @@
     }
 }
 
-@media screen and (min-width: 499px) {
+@media screen and (min-width: 500px) {
     .home-mobile-title {
         display: none;
     }
