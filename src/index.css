@@ -9,13 +9,13 @@ html {
 }
 
 :root {
-    --color-primary: #222; /* background color */
+    --color-primary: #222; /* background */
     --color-dark: #111; /* background undertone */
-    --color-light: #555;
-    --color-white: #EDECE6;
+    --color-light: #555; /* hover and directives background */
+    --color-white: #EDECE6; /* text color */
     --color-accent: #00b87b; /* button color */
-    --color-tint: #00ffaa; /* hover color */
-    --color-shadow: rgba(0, 184, 123, 0.3); /* surface border color */
+    --color-tint: #00ffaa; /* active color */
+    --color-shadow: rgba(0, 184, 123, 0.3); /* surface border */
     --color-shadow-dark: rgba(0, 0, 0, 0.3);
 
     --toastify-icon-color-success: var(--color-accent) !important; 
