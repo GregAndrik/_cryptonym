@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import DesktopNavbar from '../standard/NavStandard';
+import NavStandard from '../standard/NavStandard';
 import MobileNavbar from '../mobile/NavMobile';
 
 const Nav = () => {
@@ -17,7 +17,7 @@ const Nav = () => {
 
   return (
     <>
-      {isMobile ? <MobileNavbar /> : <DesktopNavbar />}
+      {isMobile ? <MobileNavbar /> : <NavStandard />}
     </>
   );
 };
