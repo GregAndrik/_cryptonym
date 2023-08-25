@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import NavStandard from '../standard/NavStandard';
-import MobileNavbar from '../mobile/NavMobile';
+import NavMobile from '../mobile/NavMobile';
 
 const Nav = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -17,7 +17,7 @@ const Nav = () => {
 
   return (
     <>
-      {isMobile ? <MobileNavbar /> : <NavStandard />}
+      {isMobile ? <NavMobile /> : <NavStandard />}
     </>
   );
 };
