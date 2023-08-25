@@ -11,7 +11,7 @@ html {
 :root {
     --color-primary: #222; /* background color */
     --color-dark: #111; /* background undertone */
-    --color-light: #444;
+    --color-light: #555;
     --color-white: #EDECE6;
     --color-accent: #00b87b; /* button color */
     --color-tint: #00ffaa; /* hover color */

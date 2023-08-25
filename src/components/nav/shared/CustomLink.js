@@ -28,7 +28,7 @@ function CustomLink({to, children, ...props}) {
           if (!isActive) {
             // On hover exit, revert the link's text and background colors to default
             e.target.style.color = "var(--color-accent)";
-            e.target.style.backgroundColor = "var(--color-shadow-dark)"; // Change background color on hover
+            //e.target.style.backgroundColor = "var(--color-shadow-dark)"; // Change background color on hover
           }
         }}
         {...props}
