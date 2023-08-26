@@ -3,7 +3,7 @@ import { AiOutlineHome } from 'react-icons/ai'
 import { MdOutlineEnhancedEncryption, MdOutlineNoEncryptionGmailerrorred } from 'react-icons/md'
 import './navMobile.css'; 
 
-const MobileNavbar = () => {
+const NavMobile = () => {
   return (
     <nav className='nav-mobile'>
       <CustomLink to='/' className='nav-mobile-link'><AiOutlineHome /></CustomLink>
@@ -13,4 +13,4 @@ const MobileNavbar = () => {
   );
 };
 
-export default MobileNavbar;
+export default NavMobile;
