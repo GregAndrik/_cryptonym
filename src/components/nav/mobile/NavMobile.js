@@ -5,10 +5,10 @@ import './navMobile.css';
 
 const MobileNavbar = () => {
   return (
-    <nav className='mobile-nav'>
-      <CustomLink to='/' className='mobile-nav-link'><AiOutlineHome /></CustomLink>
-      <CustomLink to='/Encryption' className='mobile-nav-link'><MdOutlineEnhancedEncryption /></CustomLink>
-      <CustomLink to='/Decryption' className='mobile-nav-link'><MdOutlineNoEncryptionGmailerrorred /></CustomLink>
+    <nav className='nav-mobile'>
+      <CustomLink to='/' className='nav-mobile-link'><AiOutlineHome /></CustomLink>
+      <CustomLink to='/Encryption' className='nav-mobile-link'><MdOutlineEnhancedEncryption /></CustomLink>
+      <CustomLink to='/Decryption' className='nav-mobile-link'><MdOutlineNoEncryptionGmailerrorred /></CustomLink>
     </nav>
   );
 };
