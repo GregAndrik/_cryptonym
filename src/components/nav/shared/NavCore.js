@@ -6,7 +6,7 @@ const Nav = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   const handleResize = () => {
-    setIsMobile(window.innerWidth <= 499); // Breakpoint for nav switch
+    setIsMobile(window.innerWidth <= 600); // Breakpoint for nav switch
   };
 
   useEffect(() => {
