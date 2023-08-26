@@ -77,6 +77,12 @@
     }
 }
 
+@media screen and (min-width: 601px) {
+    .home-mobile-title {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .home-content {
         flex-direction: column;
@@ -89,12 +95,6 @@
 
     .home-content-row-title {
         font-size: 1.2rem;
-    }
-}
-
-@media screen and (min-width: 601px) {
-    .home-mobile-title {
-        display: none;
     }
 }
 
