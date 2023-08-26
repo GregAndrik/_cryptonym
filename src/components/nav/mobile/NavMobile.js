@@ -1,7 +1,6 @@
-import { AiOutlineHome } from 'react-icons/ai'
-import { MdOutlineEnhancedEncryption } from 'react-icons/md'
-import { MdOutlineNoEncryptionGmailerrorred } from 'react-icons/md'
 import CustomLink from '../shared/CustomLink';
+import { AiOutlineHome } from 'react-icons/ai'
+import { MdOutlineEnhancedEncryption, MdOutlineNoEncryptionGmailerrorred } from 'react-icons/md'
 import './navMobile.css'; 
 
 const MobileNavbar = () => {
