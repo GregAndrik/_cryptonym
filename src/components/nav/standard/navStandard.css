@@ -6,6 +6,11 @@
     align-items: stretch;
     gap: 2rem;
     padding: 0 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
 }
 
 .nav-standard ul {

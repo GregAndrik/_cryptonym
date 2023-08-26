@@ -85,9 +85,30 @@
         width: 90%;
     }
 
-    .encryption,
+    .encryption h2,
     .decryption h2 {
         margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .encryption,
+    .decryption {
+        margin: 5rem auto 0;  
+    }   
+}
+
+@media screen and (max-width: 600px) {
+    .encryption h2,
+    .decryption h2 {
+        font-size: 1.2rem;
+    }  
+}
+
+@media screen and (max-width: 500px) {
+    .encryption h2,
+    .decryption h2 {
+        font-size: 1.1rem;
     }
 }
 
@@ -99,8 +120,12 @@
 }
 
 @media screen and (max-width: 400px) {
-    .encryption,
+    .encryption h2,
     .decryption h2 {
+        font-size: 1rem;
+    }
+
+    .directive {
         font-size: 1rem;
     }
 
@@ -111,6 +136,50 @@
 
     .mask-toggle-button {
         top: 48.5%;
+    }
+}
+
+@media screen and (max-width: 377px) {
+    .encryption h2,
+    .decryption h2 {
+        font-size: 0.9rem;
+    }
+
+    .directive {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .encryption h2,
+    .decryption h2 {
+        font-size: 0.8rem;
+    }
+
+    .directive {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 315px) {
+    .encryption h2,
+    .decryption h2 {
+        font-size: 0.7rem;
+    }
+
+    .directive {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 284px) {
+    .encryption h2,
+    .decryption h2 {
+        font-size: 0.6rem;
+    }
+
+    .directive {
+        font-size: 0.6rem;
     }
 }
 
