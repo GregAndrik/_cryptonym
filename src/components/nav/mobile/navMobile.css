@@ -7,7 +7,7 @@
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 2rem;
+    bottom: 0rem;
     display: flex;
     border-radius: 16px 16px 0 0;
     gap: 0.8rem;
@@ -24,12 +24,6 @@
 
 .mobile-nav-link li:hover {
     color: var(--color-);
-}
-
-@media screen and (max-width: 500px) {
-    .mobile-nav {
-        bottom: 0rem;
-    }
 }
 
 @media screen and (max-width: 300px) {
