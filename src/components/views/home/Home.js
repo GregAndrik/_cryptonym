@@ -7,9 +7,7 @@ const Home = () => {
     <>
     <div className='home-container'>
       <div className='home-background'>
-        <div>
-          <h1 className='home-mobile-title'>_cryptonym</h1>
-        </div>
+        <h1 className='mobile-exclusive'>_cryptonym</h1>
         <img className='home-image' src={argus} alt='Argus logo'/>
       </div>
     </div>
