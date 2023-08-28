@@ -25,17 +25,17 @@ html {
 
 /* Style the scrollbar track */
 ::-webkit-scrollbar {
-    width: 12px; /* width of the scrollbar */
+    width: 10px; /* width of the scrollbar */
 }
 
 /* Style the scrollbar thumb */
 ::-webkit-scrollbar-thumb {
-    background-color: var(--color-dark); /* color of the thumb */
+    background-color: var(--color-shadow); /* color of the thumb */
 }
 
 /* Style the scrollbar thumb when hovered */
 ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--color-tint); /* color of the thumb on hover */
+    background-color: var(--color-accent); /* color of the thumb on hover */
 }
 
 /* Style the scrollbar track when hovered */
