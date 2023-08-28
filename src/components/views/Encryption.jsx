@@ -90,7 +90,7 @@ const Encryption = () => {
     // Provide a toast notification on successful copying
     toast.success('Security key copied to clipboard.', {
       position: toast.POSITION.TOP_CENTER,
-      autoClose: 3000,
+      autoClose: 2000,
     });
   };
 

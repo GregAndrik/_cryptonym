@@ -18,6 +18,8 @@ html {
     --color-shadow: rgba(0, 184, 122, 0.3); /* surface border */
     --color-shadow-dark: rgba(0, 0, 0, 0.3);
 
+    --transition: all 400ms ease;
+
     --toastify-icon-color-success: var(--color-accent) !important; 
     --toastify-color-progress-success: var(--color-tint) !important;
     --toastify-color-success: var(--color-accent) !important;
@@ -61,6 +63,7 @@ p {
 }
 
 .primary-button {
+    width: max-content;
     padding: 0.75rem 1.5rem;
     background-color: var(--color-accent);
     color: var(--color-primary);
@@ -69,7 +72,7 @@ p {
     cursor: pointer;
     font-size: 1.1rem;
     margin: 0.5rem 0;
-    transition: background-color 0.3s ease;
+    transition: var(--transition);
 }
 
 .primary-button:active {
@@ -85,7 +88,6 @@ p {
 @media screen and (max-width: 600px) {
     .primary-button:active {
         background-color: var(--color-tint);
-        transform: scale(1.05); /* Magnification effect */    
     }
 
     ::-webkit-scrollbar {

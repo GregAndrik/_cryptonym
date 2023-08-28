@@ -5,7 +5,6 @@ import Decryption from './components/views/Decryption';
 import Footer from './components/footer/Footer'
 import { Route, Routes } from 'react-router-dom';
 
-// Rendering Home, Encryption, Decryption pages along with Navbar and Footer
 const App = () => {
   return (
     <>

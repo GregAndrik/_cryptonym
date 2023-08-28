@@ -1,11 +1,11 @@
 .dropZone {
-    border: 0.15rem dashed var(--color-accent);
+    border: 2px dashed var(--color-accent);
     padding: 2rem 10rem;
     cursor: pointer;
     outline: none;
     background-color: var(--color-primary);
     border-radius: 0.5rem;
-    transition: border-color 0.3s ease;
+    transition: var(--transition);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,6 +21,7 @@
 
 @media (max-width: 600px) {
     .dropZone {
+        border: 1px dashed var(--color-accent);
         width: 90%;
     }
 }
