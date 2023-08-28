@@ -24,7 +24,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-    width: 10px; /* width of the scrollbar */
+    width: 8px; /* width of the scrollbar */
 }
 
 ::-webkit-scrollbar-thumb {
@@ -72,12 +72,22 @@ p {
     transition: background-color 0.3s ease;
 }
 
-.primary-button:hover {
-    background-color: var(--color-tint);
-    transform: scale(1.05); /* Magnification effect */
+@media screen and (min-width: 600px) {
+    .primary-button:hover {
+        background-color: var(--color-tint);
+    }
+
+    .primary-button:active {
+        transform: scale(1.05); /* Magnification effect */    
+    } 
 }
 
 @media screen and (max-width: 600px) {
+    .primary-button:active {
+        background-color: var(--color-tint);
+        transform: scale(1.05); /* Magnification effect */    
+    }
+
     ::-webkit-scrollbar {
         display: none;
     }
