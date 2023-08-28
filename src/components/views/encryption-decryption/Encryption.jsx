@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import CryptoJS from 'crypto-js';
-import ReusableDropzone from './shared/ReusableDropzone'; 
+import ReusableDropzone from '../shared/ReusableDropzone';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';

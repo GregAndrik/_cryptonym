@@ -1,7 +1,7 @@
 import NavCore from './components/nav/shared/NavCore';
 import Home from './components/views/home/Home';
-import Encryption from './components/views/Encryption';
-import Decryption from './components/views/Decryption';
+import Encryption from './components/views/encryption-decryption/Encryption';
+import Decryption from './components/views/encryption-decryption/Decryption';
 import Footer from './components/footer/Footer'
 import { Route, Routes } from 'react-router-dom';
 
