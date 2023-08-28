@@ -23,6 +23,31 @@ html {
     --toastify-color-success: var(--color-accent) !important;
 }
 
+/* Style the scrollbar track */
+::-webkit-scrollbar {
+    width: 12px; /* width of the scrollbar */
+}
+
+/* Style the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-dark); /* color of the thumb */
+}
+
+/* Style the scrollbar thumb when hovered */
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-tint); /* color of the thumb on hover */
+}
+
+/* Style the scrollbar track when hovered */
+::-webkit-scrollbar-track {
+    background-color: var(--color-light); /* color of the track */
+}
+
+/* Style the scrollbar track when the thumb is being dragged */
+::-webkit-scrollbar-thumb:active {
+    background-color: var(--color-accent); /* color of the thumb when active */
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -55,6 +80,12 @@ p {
 .primary-button:hover {
     background-color: var(--color-tint);
     transform: scale(1.05); /* Magnification effect */
+}
+
+@media screen and (max-width: 600px) {
+    ::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 400px) {
