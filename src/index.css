@@ -72,14 +72,14 @@ p {
     transition: background-color 0.3s ease;
 }
 
+.primary-button:active {
+    transform: scale(1.05); /* Magnification effect */    
+} 
+
 @media screen and (min-width: 600px) {
     .primary-button:hover {
         background-color: var(--color-tint);
     }
-
-    .primary-button:active {
-        transform: scale(1.05); /* Magnification effect */    
-    } 
 }
 
 @media screen and (max-width: 600px) {
