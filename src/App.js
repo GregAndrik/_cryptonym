@@ -1,4 +1,4 @@
-import NavCore from './components/nav/shared/NavCore';
+import NavCore from './components/navigation/shared/NavCore';
 import Home from './components/views/home/Home';
 import Encryption from './components/views/encryption-decryption/Encryption';
 import Decryption from './components/views/encryption-decryption/Decryption';
