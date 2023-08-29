@@ -19,7 +19,7 @@ html {
     --color-shadow-dark: rgba(0, 0, 0, 0.3);
 
     --transition: all 400ms ease;
-    --magnify-effect: scale(1.05);
+    --transform: scale(1.05);
 
     --toastify-icon-color-success: var(--color-accent) !important; 
     --toastify-color-progress-success: var(--color-tint) !important;
@@ -77,16 +77,21 @@ p {
 }
 
 .primary-button:active {
-    transition: var(--transition);  
-} 
+    transform: var(--transform);
+}
 
-@media screen and (min-width: 600px) {
+/* Nav breakpoint */
+@media screen and (min-width: 1281px) {
     .primary-button:hover {
         background-color: var(--color-tint);
     }
+
+    .primary-button:active {
+        transition: var(--transition);
+    }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1280px) {
     .primary-button:active {
         background-color: var(--color-tint);
     }

@@ -9,7 +9,7 @@ footer {
     color: var(--color-accent);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1280px) {
     footer {
         padding: 6rem 0 4rem;
     }
