@@ -32,8 +32,23 @@
     transition: var(--transition);
 }
 
+.nav-standard a::after {
+    content: ""; /* Create a pseudo-element */
+    position: absolute; /* Position at the bottom of the link */
+    left: 0;
+    bottom: 0;
+    width: 100%; /* Width of the line */
+    height: 2px; /* Height of the line */
+    background-color: var(--color-tint);
+    transform: scaleX(0); /* Initially no width */
+    transition: var(--transition)
+}
+
 .nav-standard a:hover {
     transform: translateY(-2px); /* Slight upward shift on hover */
+    &::after {
+        transform: scaleX(1); /* Expand the line on hover */
+    }
 }
 
 .nav-standard li:hover {
