@@ -1,6 +1,6 @@
 .encryption,
 .decryption {
-    margin: 1rem auto 0;
+    margin: 5rem auto 2rem;
     max-width: 50rem;
     padding: 1.9rem;
     background-color: var(--color-primary);
@@ -79,6 +79,13 @@
     color: var(--color-dark) !important;
 }
 
+@media screen and (max-width: 1280px) {
+    .encryption,
+    .decryption {
+        margin: 2rem auto 5rem;
+    }  
+}
+
 @media screen and (max-width: 850px) {
     .encryption,
     .decryption {
@@ -89,13 +96,6 @@
     .decryption h2 {
         margin-bottom: 1rem;
     }
-}
-
-@media screen and (min-width: 601px) {
-    .encryption,
-    .decryption {
-        margin: 5rem auto 0;  
-    }   
 }
 
 @media screen and (max-width: 600px) {
