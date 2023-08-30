@@ -90,10 +90,6 @@ p {
     .primary-button:active {
         background-color: var(--color-tint);
     }
-
-    ::-webkit-scrollbar {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 400px) {
